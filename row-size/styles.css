@@ -7,6 +7,7 @@ body {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(2, 200px);
   height: 100vh;
+  grid-gap: 5px;
 }
 
 .item {
@@ -19,13 +20,12 @@ body {
   /* background: blue;
   grid-column-start: 1; */
   grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
 }
 .item:nth-of-type(2) {
   grid-column: 4 / span 2;
+  grid-row: 1 / span 2;
 }
 .item:nth-of-type(3) {
   grid-column: 6 / span 2;
-}
-.item:nth-of-type(7) {
-  /* grid-column: 2 / 4; */
 }
